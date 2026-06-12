@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 4. VAE results by dataset. $\DJS$ is reported as mean $\pm$ std over 5 seeds. Runtime is reported in seconds and includes the full training pipeline, including hyperparameter search when enabled.}}
+\label{tab:uc4_vae}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Dataset & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+\multicolumn{9}{c}{\textbf{$\DJS$}} \\
+\midrule
+adult & 0.1904 $\pm$ 0.0099 & 0.2123 $\pm$ 0.0057 & 0.0328 $\pm$ 0.0031 & 0.6929 $\pm$ 0.0246 & 0.0542 $\pm$ 0.0041 & 0.4143 $\pm$ 0.0081 & 0.0088 $\pm$ 0.0002 & 0.0084 $\pm$ 0.0002 \\
+intrusion & 0.9103 $\pm$ 0.0064 & 0.9877 $\pm$ 0.0057 & 0.0460 $\pm$ 0.0081 & 0.9953 $\pm$ 0.0034 & 0.2171 $\pm$ 0.0134 & 0.9913 $\pm$ 0.0027 & 0.0404 $\pm$ 0.0003 & 0.0195 $\pm$ 0.0002 \\
+king & 0.8490 $\pm$ 0.0056 & 0.5548 $\pm$ 0.0168 & 0.1256 $\pm$ 0.0122 & 0.8901 $\pm$ 0.0073 & 0.4886 $\pm$ 0.0162 & 0.9053 $\pm$ 0.0094 & 0.0313 $\pm$ 0.0002 & 0.0296 $\pm$ 0.0002 \\
+news & 0.3996 $\pm$ 0.0091 & 0.8822 $\pm$ 0.0129 & 0.0108 $\pm$ 0.0028 & 0.9970 $\pm$ 0.0022 & 0.2649 $\pm$ 0.0118 & 0.9974 $\pm$ 0.0008 & 0.0713 $\pm$ 0.0003 & 0.0669 $\pm$ 0.0002 \\
+\midrule
+\multicolumn{9}{c}{\textbf{Time (s)}} \\
+\midrule
+adult & 1328.50 & 425.61 & 54.80 & 158.24 & 3733.98 & 1.55 & 0.01 & 0.01 \\
+intrusion & 1000.57 & 311.83 & 864.81 & 136.01 & 25275.99 & 1.73 & 0.04 & 0.03 \\
+king & 1114.88 & 695.82 & 76.64 & 240.40 & 9071.47 & 1.70 & 0.02 & 0.02 \\
+news & 962.58 & 604.95 & 456.21 & 151.82 & 23768.48 & 1.88 & 0.04 & 0.03 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Use case 6. Absolute Jensen--Shannon estimation error for gap magnitude $0.3$, with and without prior correction, reported as mean $\pm$ std over seeds. Values are shown as $|\widehat{D}_{\mathrm{JS}} - D_{\mathrm{JS}}^{\star}|$; the final row in each mode reports mean runtime.}
+\label{tab:uc6_gap_0p3_on_off_mean_std_from_seeds}
+\begin{tabular}{lrcccccccc}
+\toprule
+Mode & N & MLP & RF & LogReg & LogRegPol & XGBoost & TabPFN & Syndat & Synthcity \\
+\midrule
+Correction OFF & 0.1 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0318 $\pm$ 0.0119 & 0.0399 $\pm$ 0.0082 \\
+Correction OFF & 0.5 & 0.0670 $\pm$ 0.0109 & 0.0867 $\pm$ 0.0070 & 0.0917 $\pm$ 0.0003 & 0.0793 $\pm$ 0.0133 & 0.0835 $\pm$ 0.0095 & 0.0873 $\pm$ 0.0061 & 0.0585 $\pm$ 0.0032 & 0.0625 $\pm$ 0.0025 \\
+Correction OFF & 1.0 & 0.0081 $\pm$ 0.0070 & 0.0214 $\pm$ 0.0149 & 0.0452 $\pm$ 0.0186 & 0.0128 $\pm$ 0.0129 & 0.0204 $\pm$ 0.0136 & 0.0088 $\pm$ 0.0070 & 0.0594 $\pm$ 0.0018 & 0.0638 $\pm$ 0.0012 \\
+Correction OFF & Time (s) & 434.57 $\pm$ 188.44 & 168.93 $\pm$ 14.45 & 28.98 $\pm$ 0.59 & 38.72 $\pm$ 3.95 & 71.74 $\pm$ 5.84 & 0.42 $\pm$ 0.00 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+Correction ON & 0.1 & 0.0280 $\pm$ 0.0252 & 0.0619 $\pm$ 0.0409 & 0.0523 $\pm$ 0.0240 & 0.0513 $\pm$ 0.0397 & 0.0521 $\pm$ 0.0366 & 0.0359 $\pm$ 0.0322 & 0.0318 $\pm$ 0.0119 & 0.0399 $\pm$ 0.0082 \\
+Correction ON & 0.5 & 0.0084 $\pm$ 0.0032 & 0.0247 $\pm$ 0.0175 & 0.0473 $\pm$ 0.0209 & 0.0178 $\pm$ 0.0141 & 0.0207 $\pm$ 0.0209 & 0.0087 $\pm$ 0.0020 & 0.0585 $\pm$ 0.0032 & 0.0625 $\pm$ 0.0025 \\
+Correction ON & 1.0 & 0.0081 $\pm$ 0.0070 & 0.0214 $\pm$ 0.0149 & 0.0452 $\pm$ 0.0186 & 0.0128 $\pm$ 0.0129 & 0.0204 $\pm$ 0.0136 & 0.0088 $\pm$ 0.0070 & 0.0594 $\pm$ 0.0018 & 0.0638 $\pm$ 0.0012 \\
+Correction ON & Time (s) & 484.38 $\pm$ 235.50 & 169.18 $\pm$ 14.67 & 28.39 $\pm$ 0.20 & 38.72 $\pm$ 3.85 & 71.47 $\pm$ 5.79 & 0.42 $\pm$ 0.01 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.01 \\
+\bottomrule
+\end{tabular}
+\end{table}

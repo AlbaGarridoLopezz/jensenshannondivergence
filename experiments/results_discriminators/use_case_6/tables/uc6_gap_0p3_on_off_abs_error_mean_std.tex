@@ -1,0 +1,23 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 6. Absolute Jensen--Shannon estimation error for gap magnitude $0.3$, with and without prior correction, reported as mean $\pm$ std over 5 seeds. Values are shown as $|\widehat{D}_{\mathrm{JS}} - D_{\mathrm{JS}}^{\star}|$; the final row in each mode reports mean runtime.}
+\label{tab:uc6_gap_0p3_on_off_mean_std}
+\begin{tabular}{lrcccccccc}
+\toprule
+Mode & N & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+Correction ON & 0.1 & 0.0270 $\pm$ 0.0263 & 0.0520 $\pm$ 0.0314 & 0.0508 $\pm$ 0.0209 & 0.0723 $\pm$ 0.0168 & 0.0352 $\pm$ 0.0279 & 0.0916 $\pm$ 0.0004 & 0.0318 $\pm$ 0.0107 & 0.0399 $\pm$ 0.0074 \\
+Correction ON & 0.5 & 0.0022 $\pm$ 0.0083 & 0.0164 $\pm$ 0.0105 & 0.0412 $\pm$ 0.0126 & 0.0651 $\pm$ 0.0051 & 0.0018 $\pm$ 0.0129 & 0.0873 $\pm$ 0.0055 & 0.0585 $\pm$ 0.0028 & 0.0625 $\pm$ 0.0021 \\
+Correction ON & 0.7 & 0.0043 $\pm$ 0.0103 & 0.0149 $\pm$ 0.0102 & 0.0420 $\pm$ 0.0125 & 0.0660 $\pm$ 0.0064 & 0.0038 $\pm$ 0.0128 & 0.0286 $\pm$ 0.0133 & 0.0570 $\pm$ 0.0018 & 0.0615 $\pm$ 0.0014 \\
+Correction ON & 1.0 & 0.0055 $\pm$ 0.0088 & 0.0174 $\pm$ 0.0092 & 0.0412 $\pm$ 0.0138 & 0.0643 $\pm$ 0.0061 & 0.0049 $\pm$ 0.0090 & 0.0052 $\pm$ 0.0092 & 0.0594 $\pm$ 0.0017 & 0.0638 $\pm$ 0.0013 \\
+Correction ON & Time (avg s) & 490.23 $\pm$ -- & 9.30 $\pm$ -- & 0.15 $\pm$ -- & 4.38 $\pm$ -- & 0.22 $\pm$ -- & 0.36 $\pm$ -- & 0.00 $\pm$ -- & 0.00 $\pm$ -- \\
+Correction OFF & 0.1 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0916 $\pm$ 0.0004 & 0.0318 $\pm$ 0.0107 & 0.0399 $\pm$ 0.0074 \\
+Correction OFF & 0.5 & 0.0692 $\pm$ -- & 0.0837 $\pm$ -- & 0.0917 $\pm$ -- & 0.0849 $\pm$ -- & 0.0767 $\pm$ -- & 0.0872 $\pm$ -- & 0.0585 $\pm$ -- & 0.0625 $\pm$ -- \\
+Correction OFF & 0.7 & 0.0223 $\pm$ -- & 0.0354 $\pm$ -- & 0.0634 $\pm$ -- & 0.0332 $\pm$ -- & 0.0285 $\pm$ -- & 0.0286 $\pm$ -- & 0.0570 $\pm$ -- & 0.0615 $\pm$ -- \\
+Correction OFF & 1.0 & 0.0054 $\pm$ -- & 0.0149 $\pm$ -- & 0.0412 $\pm$ -- & 0.0144 $\pm$ -- & 0.0054 $\pm$ -- & 0.0052 $\pm$ -- & 0.0594 $\pm$ -- & 0.0638 $\pm$ -- \\
+Correction OFF & Time (avg s) & 137.64 $\pm$ -- & 23.92 $\pm$ -- & 0.65 $\pm$ -- & 73.71 $\pm$ -- & 1.34 $\pm$ -- & 0.39 $\pm$ -- & 0.00 $\pm$ -- & 0.00 $\pm$ -- \\
+\bottomrule
+\end{tabular}
+\end{table}

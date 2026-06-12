@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Use case 4 (CTGAN). DJS values are reported as mean $\pm$ std over 5 seeds, multiplied by 100 and shown with two decimals. Times remain in seconds.}
+\label{tab:uc4_ctgan_by_classifier_mean_std_x100_2dec}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Metric & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & CTGAN DJS (x100) & 12.45 $\pm$ 0.79 & 16.79 $\pm$ 1.75 & 2.25 $\pm$ 0.79 & 66.58 $\pm$ 0.64 & 4.19 $\pm$ 1.09 & 37.69 $\pm$ 1.37 & 1.45 $\pm$ 0.01 & 1.40 $\pm$ 0.01 \\
+adult & Time CTGAN (s) & 1150.93 $\pm$ -- & 402.26 $\pm$ -- & 50.42 $\pm$ -- & 151.99 $\pm$ -- & 3423.97 $\pm$ -- & 1.45 $\pm$ -- & 0.01 $\pm$ -- & 0.01 $\pm$ -- \\
+intrusion & CTGAN DJS (x100) & 57.33 $\pm$ 1.38 & 83.95 $\pm$ 0.95 & 6.85 $\pm$ 0.96 & 90.37 $\pm$ 0.72 & 28.74 $\pm$ 0.87 & 83.37 $\pm$ 0.75 & 2.11 $\pm$ 0.03 & 0.84 $\pm$ 0.02 \\
+intrusion & Time CTGAN (s) & 1382.65 $\pm$ -- & 296.91 $\pm$ -- & 734.26 $\pm$ -- & 164.56 $\pm$ -- & 28076.65 $\pm$ -- & 1.76 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+king & CTGAN DJS (x100) & 74.39 $\pm$ 1.11 & 34.80 $\pm$ 2.17 & 6.31 $\pm$ 1.14 & 92.25 $\pm$ 0.76 & 21.82 $\pm$ 1.13 & 92.93 $\pm$ 0.42 & 2.07 $\pm$ 0.01 & 1.96 $\pm$ 0.01 \\
+king & Time CTGAN (s) & 1220.77 $\pm$ -- & 669.82 $\pm$ -- & 74.86 $\pm$ -- & 278.11 $\pm$ -- & 7292.66 $\pm$ -- & 1.73 $\pm$ -- & 0.03 $\pm$ -- & 0.02 $\pm$ -- \\
+news & CTGAN DJS (x100) & 48.41 $\pm$ 1.53 & 80.53 $\pm$ 0.98 & 10.22 $\pm$ 0.76 & 99.63 $\pm$ 0.24 & 34.77 $\pm$ 1.41 & 94.72 $\pm$ 0.04 & 4.12 $\pm$ 0.03 & 3.81 $\pm$ 0.02 \\
+news & Time CTGAN (s) & 786.59 $\pm$ -- & 600.41 $\pm$ -- & 213.39 $\pm$ -- & 158.30 $\pm$ -- & 26210.05 $\pm$ -- & 1.84 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+\bottomrule
+\end{tabular}
+\end{table}

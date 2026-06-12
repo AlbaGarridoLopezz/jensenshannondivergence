@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Use case 4. Resultados por dataset: filas de metricas por generador y columnas por clasificador (sin GT).}
+\label{tab:uc4_by_classifier_transposed}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Metric & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN \\
+\midrule
+adult & VAE DJS & 0.1904 & 0.2123 & 0.0328 & 0.6929 & 0.0542 & 0.4143 \\
+adult & Time VAE (s) & 1328.50 & 425.61 & 54.80 & 158.24 & 3733.98 & 1.55 \\
+adult & CTGAN DJS & 0.1245 & 0.1679 & 0.0225 & 0.6658 & 0.0419 & 0.3769 \\
+adult & Time CTGAN (s) & 1150.93 & 402.26 & 50.42 & 151.99 & 3423.97 & 1.45 \\
+\midrule
+intrusion & VAE DJS & 0.9103 & 0.9877 & 0.0460 & 0.9953 & 0.2171 & 0.9913 \\
+intrusion & Time VAE (s) & 1000.57 & 311.83 & 864.81 & 136.01 & 25275.99 & 1.73 \\
+intrusion & CTGAN DJS & 0.5733 & 0.8395 & 0.0685 & 0.9037 & 0.2874 & 0.8337 \\
+intrusion & Time CTGAN (s) & 1382.65 & 296.91 & 734.26 & 164.56 & 28076.65 & 1.76 \\
+\midrule
+king & VAE DJS & 0.8490 & 0.5548 & 0.1256 & 0.8901 & 0.4886 & 0.9053 \\
+king & Time VAE (s) & 1114.88 & 695.82 & 76.64 & 240.40 & 9071.47 & 1.70 \\
+king & CTGAN DJS & 0.7439 & 0.3480 & 0.0631 & 0.9225 & 0.2182 & 0.9293 \\
+king & Time CTGAN (s) & 1220.77 & 669.82 & 74.86 & 278.11 & 7292.66 & 1.73 \\
+\midrule
+news & VAE DJS & 0.3996 & 0.8822 & 0.0108 & 0.9970 & 0.2649 & 0.9974 \\
+news & Time VAE (s) & 962.58 & 604.95 & 456.21 & 151.82 & 23768.48 & 1.88 \\
+news & CTGAN DJS & 0.4841 & 0.8053 & 0.1022 & 0.9963 & 0.3477 & 0.9472 \\
+news & Time CTGAN (s) & 786.59 & 600.41 & 213.39 & 158.30 & 26210.05 & 1.84 \\
+\bottomrule
+\end{tabular}
+\end{table}

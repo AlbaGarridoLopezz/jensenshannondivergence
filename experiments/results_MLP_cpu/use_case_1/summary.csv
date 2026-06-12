@@ -1,0 +1,2 @@
+mode,experiment,discriminator_type,seed,n,m,l,mc_gt_js,mc_js,disc_js,training_time_s,output_dir
+predefined,use_case_1,MLP,0,,200,200,0.28004971146583557,0.29058948159217834,0.21201705932617188,2.8359732627868652,/home/alba/snap/snapd-desktop-integration/jensenshannondivergence/experiments/results_MLP/use_case_1

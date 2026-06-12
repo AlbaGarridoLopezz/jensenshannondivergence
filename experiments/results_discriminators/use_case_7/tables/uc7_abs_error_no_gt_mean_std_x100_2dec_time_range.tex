@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Absolute Jensen-Shannon estimation error across dimensionalities, reported as mean $\pm$ std over 5 seeds. All divergence values are multiplied by 100 and shown with two decimals. The last row reports runtime as $[\min, \max]$ over the smallest and largest tested dimensions. Reported times correspond to a single representative run and include the full training pipeline, including model fitting and hyperparameter search when enabled.}
+\label{tab:uc7_abs_error_no_gt_mean_std_x100_2dec_time_range}
+\begin{tabular}{rcccccccc}
+\toprule
+N & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+2 & 0.52 $\pm$ 0.35 & 0.82 $\pm$ 0.60 & 0.56 $\pm$ 0.42 & 0.83 $\pm$ 0.78 & 0.57 $\pm$ 0.43 & 0.61 $\pm$ 0.43 & 3.15 $\pm$ 1.52 & 3.59 $\pm$ 1.80 \\
+10 & 1.38 $\pm$ 0.89 & 2.33 $\pm$ 1.89 & 1.45 $\pm$ 1.22 & 1.91 $\pm$ 1.20 & 1.44 $\pm$ 1.21 & 1.69 $\pm$ 1.07 & 23.75 $\pm$ 4.30 & 24.28 $\pm$ 4.33 \\
+25 & 3.16 $\pm$ 0.61 & 9.73 $\pm$ 1.70 & 3.77 $\pm$ 0.91 & 6.25 $\pm$ 1.14 & 3.70 $\pm$ 0.90 & 3.37 $\pm$ 0.76 & 39.46 $\pm$ 5.99 & 39.99 $\pm$ 5.98 \\
+40 & 7.19 $\pm$ 1.63 & 18.28 $\pm$ 1.10 & 7.94 $\pm$ 1.89 & 10.19 $\pm$ 1.61 & 7.94 $\pm$ 1.89 & 7.64 $\pm$ 1.80 & 53.02 $\pm$ 4.09 & 53.54 $\pm$ 4.10 \\
+50 & 7.62 $\pm$ 2.44 & 23.61 $\pm$ 1.69 & 8.84 $\pm$ 2.86 & 11.97 $\pm$ 2.27 & 8.85 $\pm$ 2.86 & 8.62 $\pm$ 2.75 & 60.03 $\pm$ 4.17 & 60.56 $\pm$ 4.20 \\
+Time [min,max] (s) & [64.99, 69.91] & [160.28, 545.74] & [0.44, 1.47] & [71.52, 317.88] & [32.17, 1754.08] & [0.55, 1.08] & [0.00, 0.04] & [0.00, 0.03] \\
+\bottomrule
+\end{tabular}
+\end{table}

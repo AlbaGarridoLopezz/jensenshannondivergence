@@ -1,0 +1,7 @@
+{
+  "logreg__C": 0.030071279937170396,
+  "logreg__class_weight": null,
+  "logreg__penalty": "l2",
+  "poly__degree": 3,
+  "poly__interaction_only": false
+}

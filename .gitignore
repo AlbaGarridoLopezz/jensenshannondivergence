@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+.vscode/
+*.pyc
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+.gitignore
+.github/workflows

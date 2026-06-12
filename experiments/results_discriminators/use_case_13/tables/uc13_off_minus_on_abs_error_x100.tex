@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Use case 13. Difference in absolute Jensen--Shannon estimation error between OFF and ON prior correction, reported as $100\cdot(|\widehat{D}_{\mathrm{JS}}^{OFF}-D_{\mathrm{JS}}^\star|-|\widehat{D}_{\mathrm{JS}}^{ON}-D_{\mathrm{JS}}^\star|)$. Positive values indicate that ON reduces the absolute error.}
+\label{tab:uc13_off_minus_on_abs_error_x100}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+gap & N & MLP & RF & LogReg & LR-Pol & XGBoost & TabPFN \\
+\midrule
+0.3 & 0.1 & 6.04 & 2.97 & 3.93 & 4.04 & 3.95 & 5.57 \\
+0.3 & 0.5 & 5.97 & 6.20 & 4.44 & 6.16 & 6.28 & 7.86 \\
+0.7 & 0.1 & 15.00 & 7.87 & 12.49 & 13.67 & 9.99 & 14.01 \\
+0.7 & 0.5 & 4.50 & 5.86 & 6.66 & 5.55 & 6.20 & 6.57 \\
+1.0 & 0.1 & 25.63 & 23.54 & 23.00 & 22.92 & 17.55 & 24.18 \\
+1.0 & 0.5 & 3.52 & 5.23 & 5.68 & 4.59 & 5.44 & 5.30 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

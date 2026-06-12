@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Use case 4 (VAE). DJS values are reported as mean $\pm$ std over 5 seeds, multiplied by 100 and shown with two decimals. Times remain in seconds.}
+\label{tab:uc4_vae_by_classifier_mean_std_x100_2dec}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Metric & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & VAE DJS (x100) & 19.04 $\pm$ 0.99 & 21.23 $\pm$ 0.57 & 3.28 $\pm$ 0.31 & 69.29 $\pm$ 2.46 & 5.42 $\pm$ 0.41 & 41.43 $\pm$ 0.81 & 0.88 $\pm$ 0.02 & 0.84 $\pm$ 0.02 \\
+adult & Time VAE (s) & 1328.50 $\pm$ -- & 425.61 $\pm$ -- & 54.80 $\pm$ -- & 158.24 $\pm$ -- & 3733.98 $\pm$ -- & 1.55 $\pm$ -- & 0.01 $\pm$ -- & 0.01 $\pm$ -- \\
+intrusion & VAE DJS (x100) & 91.03 $\pm$ 0.64 & 98.77 $\pm$ 0.57 & 4.60 $\pm$ 0.81 & 99.53 $\pm$ 0.34 & 21.71 $\pm$ 1.34 & 99.13 $\pm$ 0.27 & 4.04 $\pm$ 0.03 & 1.95 $\pm$ 0.02 \\
+intrusion & Time VAE (s) & 1000.57 $\pm$ -- & 311.83 $\pm$ -- & 864.81 $\pm$ -- & 136.01 $\pm$ -- & 25275.99 $\pm$ -- & 1.73 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+king & VAE DJS (x100) & 84.90 $\pm$ 0.56 & 55.48 $\pm$ 1.68 & 12.56 $\pm$ 1.22 & 89.01 $\pm$ 0.73 & 48.86 $\pm$ 1.62 & 90.53 $\pm$ 0.94 & 3.13 $\pm$ 0.02 & 2.96 $\pm$ 0.02 \\
+king & Time VAE (s) & 1114.88 $\pm$ -- & 695.82 $\pm$ -- & 76.64 $\pm$ -- & 240.40 $\pm$ -- & 9071.47 $\pm$ -- & 1.70 $\pm$ -- & 0.02 $\pm$ -- & 0.02 $\pm$ -- \\
+news & VAE DJS (x100) & 39.96 $\pm$ 0.91 & 88.22 $\pm$ 1.29 & 1.08 $\pm$ 0.28 & 99.70 $\pm$ 0.22 & 26.49 $\pm$ 1.18 & 99.74 $\pm$ 0.08 & 7.13 $\pm$ 0.03 & 6.69 $\pm$ 0.02 \\
+news & Time VAE (s) & 962.58 $\pm$ -- & 604.95 $\pm$ -- & 456.21 $\pm$ -- & 151.82 $\pm$ -- & 23768.48 $\pm$ -- & 1.88 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+\bottomrule
+\end{tabular}
+\end{table}

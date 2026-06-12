@@ -1,0 +1,2 @@
+Experiment,Metric,Num blocks,Num methods,Methods,Friedman stat,Friedman p-value,Friedman significant (alpha=0.05)
+use_case_11,raw_js,4,8,"MLP, RF, XGBoost, LogReg, LogRegPol, TabPFN, Syndat, Synthcity",27.75,0.0002440472551294392,True

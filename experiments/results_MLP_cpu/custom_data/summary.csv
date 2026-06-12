@@ -1,0 +1,2 @@
+mode,experiment,discriminator_type,seed,n,m,l,mc_gt_js,mc_js,disc_js,training_time_s,output_dir
+custom,custom_data,MLP,0,,400,200,,,0.0,1.9667847156524658,/home/alba/snap/snapd-desktop-integration/jensenshannondivergence/experiments/results_MLP/custom_data

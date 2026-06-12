@@ -1,0 +1,14 @@
+{
+  "mode": "predefined",
+  "experiment": "use_case_1",
+  "discriminator_type": "MLP",
+  "seed": 0,
+  "n": null,
+  "m": 200,
+  "l": 200,
+  "mc_gt_js": 0.28004971146583557,
+  "mc_js": 0.29058948159217834,
+  "disc_js": 0.21201705932617188,
+  "training_time_s": 2.8359732627868652,
+  "output_dir": "/home/alba/snap/snapd-desktop-integration/jensenshannondivergence/experiments/results_MLP/use_case_1"
+}

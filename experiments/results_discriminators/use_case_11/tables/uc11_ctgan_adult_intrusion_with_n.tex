@@ -1,0 +1,29 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Use case 11 (CTGAN) for adult and intrusion. Rows report DJS (x100) and runtime (s) for each training fraction N. Values are means from comparison_js files.}
+\label{tab:uc11_ctgan_adult_intrusion_with_n}
+\begin{tabular}{lllrrrrrrr}
+\toprule
+Dataset & N & Metric & MLP & RF & LogReg & XGBoost & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & Train 100% & CTGAN DJS (x100) & 0.91 & 6.09 & 1.68 & 19.85 & 12.96 & 1.83 & 1.46 \\
+adult & Train 100% & Time CTGAN (s) & 15.00 & 121.19 & 37.24 & 68.67 & 0.31 & 0.01 & 0.01 \\
+adult & Train 50% & CTGAN DJS (x100) & 1.12 & 6.17 & 1.62 & 14.67 & 12.98 & 1.83 & 1.46 \\
+adult & Train 50% & Time CTGAN (s) & 14.91 & 114.80 & 36.22 & 67.84 & 0.24 & 0.01 & 0.01 \\
+adult & Train 25% & CTGAN DJS (x100) & 0.69 & 5.60 & 1.74 & 19.62 & 12.98 & 1.83 & 1.46 \\
+adult & Train 25% & Time CTGAN (s) & 14.92 & 115.14 & 37.01 & 69.45 & 0.19 & 0.01 & 0.01 \\
+adult & Train 12.5% & CTGAN DJS (x100) & 1.11 & 5.93 & 1.58 & 18.52 & 12.99 & 1.83 & 1.46 \\
+adult & Train 12.5% & Time CTGAN (s) & 14.08 & 116.63 & 34.14 & 66.83 & 0.20 & 0.01 & 0.01 \\
+intrusion & Train 100% & CTGAN DJS (x100) & 14.84 & 67.90 & 2.36 & 82.76 & 78.63 & 1.99 & 0.67 \\
+intrusion & Train 100% & Time CTGAN (s) & 21.22 & 119.65 & 63.35 & 67.99 & 0.28 & 0.02 & 0.02 \\
+intrusion & Train 50% & CTGAN DJS (x100) & 14.04 & 67.80 & 2.24 & 82.87 & 78.55 & 1.99 & 0.67 \\
+intrusion & Train 50% & Time CTGAN (s) & 19.68 & 117.57 & 66.15 & 68.72 & 0.28 & 0.02 & 0.02 \\
+intrusion & Train 25% & CTGAN DJS (x100) & 14.73 & 66.80 & 2.52 & 81.94 & 78.57 & 1.99 & 0.67 \\
+intrusion & Train 25% & Time CTGAN (s) & 24.37 & 119.14 & 64.83 & 70.98 & 0.25 & 0.02 & 0.02 \\
+intrusion & Train 12.5% & CTGAN DJS (x100) & 14.55 & 66.34 & 2.51 & 82.60 & 78.56 & 1.99 & 0.67 \\
+intrusion & Train 12.5% & Time CTGAN (s) & 16.12 & 112.62 & 62.94 & 68.39 & 0.26 & 0.02 & 0.02 \\
+\bottomrule
+\end{tabular}
+\end{table}

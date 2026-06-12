@@ -1,0 +1,9 @@
+{
+  "class_weight": null,
+  "max_depth": 9,
+  "max_features": "log2",
+  "max_samples": 0.6965533485806086,
+  "min_samples_leaf": 10,
+  "min_samples_split": 20,
+  "n_estimators": 500
+}

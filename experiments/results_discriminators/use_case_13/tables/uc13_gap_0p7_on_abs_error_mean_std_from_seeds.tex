@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\caption{Use case 13. Absolute Jensen--Shannon estimation error for gap magnitude $0.7$ with prior correction, reported as mean $\pm$ std over seeds. Values are shown as $|\widehat{D}_{\mathrm{JS}} - D_{\mathrm{JS}}^{\star}|$; the final row reports mean runtime.}
+\label{tab:uc13_gap_0p7_on_mean_std_from_seeds}
+\begin{tabular}{lcccccccc}
+\toprule
+N & MLP & RF & LogReg & LogRegPol & XGBoost & TabPFN & Syndat & Synthcity \\
+\midrule
+0.1 & 0.0390 $\pm$ 0.0389 & 0.1103 $\pm$ 0.0608 & 0.0641 $\pm$ 0.0729 & 0.0523 $\pm$ 0.0358 & 0.0891 $\pm$ 0.0684 & 0.0489 $\pm$ 0.0504 & 0.0771 $\pm$ 0.0180 & 0.0955 $\pm$ 0.0140 \\
+0.5 & 0.0156 $\pm$ 0.0122 & 0.0234 $\pm$ 0.0218 & 0.0439 $\pm$ 0.0348 & 0.0216 $\pm$ 0.0245 & 0.0295 $\pm$ 0.0361 & 0.0180 $\pm$ 0.0115 & 0.0989 $\pm$ 0.0033 & 0.1083 $\pm$ 0.0028 \\
+Time (s) & 88.53 $\pm$ 14.96 & 137.89 $\pm$ 14.98 & 28.02 $\pm$ 0.45 & 45.81 $\pm$ 3.72 & 71.68 $\pm$ 4.61 & 0.34 $\pm$ 0.00 & 0.00 $\pm$ 0.00 & 0.00 $\pm$ 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

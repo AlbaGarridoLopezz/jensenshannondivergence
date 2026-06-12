@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 4. Results by dataset for VAE. Rows report DJS and runtime for each dataset, with columns for all discriminators and baselines, excluding GT.}
+\label{tab:uc4_vae_by_classifier}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Metric & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & VAE DJS & 0.1904 & 0.2123 & 0.0328 & 0.6929 & 0.0542 & 0.4143 & 0.0088 & 0.0084 \\
+adult & Time VAE (s) & 1328.50 & 425.61 & 54.80 & 158.24 & 3733.98 & 1.55 & 0.01 & 0.01 \\
+intrusion & VAE DJS & 0.9103 & 0.9877 & 0.0460 & 0.9953 & 0.2171 & 0.9913 & 0.0404 & 0.0195 \\
+intrusion & Time VAE (s) & 1000.57 & 311.83 & 864.81 & 136.01 & 25275.99 & 1.73 & 0.04 & 0.03 \\
+king & VAE DJS & 0.8490 & 0.5548 & 0.1256 & 0.8901 & 0.4886 & 0.9053 & 0.0313 & 0.0296 \\
+king & Time VAE (s) & 1114.88 & 695.82 & 76.64 & 240.40 & 9071.47 & 1.70 & 0.02 & 0.02 \\
+news & VAE DJS & 0.3996 & 0.8822 & 0.0108 & 0.9970 & 0.2649 & 0.9974 & 0.0713 & 0.0669 \\
+news & Time VAE (s) & 962.58 & 604.95 & 456.21 & 151.82 & 23768.48 & 1.88 & 0.04 & 0.03 \\
+\bottomrule
+\end{tabular}
+\end{table}

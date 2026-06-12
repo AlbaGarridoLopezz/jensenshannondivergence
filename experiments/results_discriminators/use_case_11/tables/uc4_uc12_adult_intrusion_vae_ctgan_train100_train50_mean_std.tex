@@ -1,0 +1,29 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\caption{Use cases 4 and 12 for adult and intrusion with VAE and CTGAN. Rows report mean $\pm$ standard deviation over seeds for $\widehat{D}_{\mathrm{JS}}$ and runtime. Train 100\% is taken from use case 4; Train 50\% is taken from use case 12.}
+\label{tab:uc4_uc12_adult_intrusion_vae_ctgan_mean_std}
+\begin{tabular}{llllrrrrrrrr}
+\toprule
+Dataset & Generator & Train & Metric & MLP & RF & LogReg & LogRegPol & XGBoost & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & VAE & Train 100% & $\widehat{D}_{\mathrm{JS}}$ & 0.1904 $\pm$ 0.0111 & 0.2123 $\pm$ 0.0063 & 0.0328 $\pm$ 0.0034 & 0.0542 $\pm$ 0.0046 & 0.6929 $\pm$ 0.0275 & 0.4143 $\pm$ 0.0091 & 0.0088 $\pm$ 0.0002 & 0.0084 $\pm$ 0.0002 \\
+adult & VAE & Train 100% & Time (s) & 1328.50 $\pm$ 458.11 & 425.61 $\pm$ 30.67 & 54.80 $\pm$ 3.56 & 3733.98 $\pm$ 145.06 & 158.24 $\pm$ 12.15 & 1.55 $\pm$ 0.38 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+adult & VAE & Train 50% & $\widehat{D}_{\mathrm{JS}}$ & 0.1740 $\pm$ 0.0174 & 0.1755 $\pm$ 0.0194 & 0.0273 $\pm$ 0.0102 & 0.0570 $\pm$ 0.0124 & 0.6395 $\pm$ 0.0151 & 0.4107 $\pm$ 0.0172 & 0.0082 $\pm$ 0.0005 & 0.0076 $\pm$ 0.0005 \\
+adult & VAE & Train 50% & Time (s) & 369.75 $\pm$ 101.84 & 245.33 $\pm$ 11.54 & 46.52 $\pm$ 1.99 & 4697.13 $\pm$ 71.08 & 110.20 $\pm$ 3.72 & 0.90 $\pm$ 0.22 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+adult & CTGAN & Train 100% & $\widehat{D}_{\mathrm{JS}}$ & 0.1245 $\pm$ 0.0089 & 0.1679 $\pm$ 0.0196 & 0.0225 $\pm$ 0.0088 & 0.0419 $\pm$ 0.0121 & 0.6658 $\pm$ 0.0072 & 0.3769 $\pm$ 0.0153 & 0.0145 $\pm$ 0.0001 & 0.0140 $\pm$ 0.0001 \\
+adult & CTGAN & Train 100% & Time (s) & 1150.93 $\pm$ 223.14 & 402.26 $\pm$ 17.76 & 50.42 $\pm$ 0.91 & 3423.97 $\pm$ 180.47 & 151.99 $\pm$ 14.44 & 1.45 $\pm$ 0.16 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+adult & CTGAN & Train 50% & $\widehat{D}_{\mathrm{JS}}$ & 0.1071 $\pm$ 0.0175 & 0.1558 $\pm$ 0.0222 & 0.0327 $\pm$ 0.0103 & 0.0504 $\pm$ 0.0127 & 0.6002 $\pm$ 0.0314 & 0.3753 $\pm$ 0.0212 & 0.0136 $\pm$ 0.0005 & 0.0129 $\pm$ 0.0005 \\
+adult & CTGAN & Train 50% & Time (s) & 420.08 $\pm$ 88.30 & 243.81 $\pm$ 11.54 & 44.73 $\pm$ 0.99 & 4581.41 $\pm$ 504.60 & 114.87 $\pm$ 8.41 & 0.85 $\pm$ 0.14 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+intrusion & VAE & Train 100% & $\widehat{D}_{\mathrm{JS}}$ & 0.9103 $\pm$ 0.0071 & 0.9877 $\pm$ 0.0063 & 0.0460 $\pm$ 0.0090 & 0.2171 $\pm$ 0.0149 & 0.9953 $\pm$ 0.0038 & 0.9913 $\pm$ 0.0030 & 0.0404 $\pm$ 0.0003 & 0.0195 $\pm$ 0.0002 \\
+intrusion & VAE & Train 100% & Time (s) & 1000.57 $\pm$ 132.30 & 311.83 $\pm$ 11.69 & 864.81 $\pm$ 111.77 & 25275.99 $\pm$ 899.58 & 136.01 $\pm$ 5.52 & 1.73 $\pm$ 0.17 & 0.04 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+intrusion & VAE & Train 50% & $\widehat{D}_{\mathrm{JS}}$ & 0.8617 $\pm$ 0.0318 & 0.9664 $\pm$ 0.0171 & 0.0027 $\pm$ 0.0017 & 0.0618 $\pm$ 0.0079 & 0.9893 $\pm$ 0.0073 & 0.9885 $\pm$ 0.0039 & 0.0397 $\pm$ 0.0004 & 0.0167 $\pm$ 0.0007 \\
+intrusion & VAE & Train 50% & Time (s) & 392.28 $\pm$ 191.17 & 191.25 $\pm$ 17.57 & 501.94 $\pm$ 83.89 & 12380.26 $\pm$ 559.56 & 93.08 $\pm$ 2.45 & 1.12 $\pm$ 0.40 & 0.03 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+intrusion & CTGAN & Train 100% & $\widehat{D}_{\mathrm{JS}}$ & 0.5733 $\pm$ 0.0154 & 0.8395 $\pm$ 0.0106 & 0.0685 $\pm$ 0.0107 & 0.2874 $\pm$ 0.0097 & 0.9037 $\pm$ 0.0081 & 0.8337 $\pm$ 0.0084 & 0.0211 $\pm$ 0.0003 & 0.0084 $\pm$ 0.0003 \\
+intrusion & CTGAN & Train 100% & Time (s) & 1382.65 $\pm$ 165.90 & 296.91 $\pm$ 19.55 & 734.26 $\pm$ 35.02 & 28076.65 $\pm$ 420.86 & 164.56 $\pm$ 6.98 & 1.76 $\pm$ 0.37 & 0.04 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+intrusion & CTGAN & Train 50% & $\widehat{D}_{\mathrm{JS}}$ & 0.4818 $\pm$ 0.1754 & 0.7949 $\pm$ 0.0111 & 0.0401 $\pm$ 0.0080 & 0.1346 $\pm$ 0.0139 & 0.8855 $\pm$ 0.0222 & 0.8315 $\pm$ 0.0134 & 0.0205 $\pm$ 0.0007 & 0.0074 $\pm$ 0.0005 \\
+intrusion & CTGAN & Train 50% & Time (s) & 621.90 $\pm$ 293.69 & 206.07 $\pm$ 7.64 & 558.28 $\pm$ 78.96 & 14161.09 $\pm$ 715.48 & 107.99 $\pm$ 6.96 & 0.93 $\pm$ 0.03 & 0.03 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

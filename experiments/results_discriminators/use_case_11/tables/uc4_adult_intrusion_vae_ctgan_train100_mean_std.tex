@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\caption{Use case 4 for adult and intrusion with VAE and CTGAN. Rows report mean $\pm$ standard deviation over seeds for $\widehat{D}_{\mathrm{JS}}$ and runtime.}
+\label{tab:uc4_adult_intrusion_vae_ctgan_mean_std}
+\begin{tabular}{lllrrrrrrrr}
+\toprule
+Dataset & Generator & Metric & MLP & RF & LogReg & LogRegPol & XGBoost & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & VAE & $\widehat{D}_{\mathrm{JS}}$ & 0.1904 $\pm$ 0.0111 & 0.2123 $\pm$ 0.0063 & 0.0328 $\pm$ 0.0034 & 0.0542 $\pm$ 0.0046 & 0.6929 $\pm$ 0.0275 & 0.4143 $\pm$ 0.0091 & 0.0088 $\pm$ 0.0002 & 0.0084 $\pm$ 0.0002 \\
+adult & VAE & Time (s) & 1328.50 $\pm$ 458.11 & 425.61 $\pm$ 30.67 & 54.80 $\pm$ 3.56 & 3733.98 $\pm$ 145.06 & 158.24 $\pm$ 12.15 & 1.55 $\pm$ 0.38 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+adult & CTGAN & $\widehat{D}_{\mathrm{JS}}$ & 0.1245 $\pm$ 0.0089 & 0.1679 $\pm$ 0.0196 & 0.0225 $\pm$ 0.0088 & 0.0419 $\pm$ 0.0121 & 0.6658 $\pm$ 0.0072 & 0.3769 $\pm$ 0.0153 & 0.0145 $\pm$ 0.0001 & 0.0140 $\pm$ 0.0001 \\
+adult & CTGAN & Time (s) & 1150.93 $\pm$ 223.14 & 402.26 $\pm$ 17.76 & 50.42 $\pm$ 0.91 & 3423.97 $\pm$ 180.47 & 151.99 $\pm$ 14.44 & 1.45 $\pm$ 0.16 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+intrusion & VAE & $\widehat{D}_{\mathrm{JS}}$ & 0.9103 $\pm$ 0.0071 & 0.9877 $\pm$ 0.0063 & 0.0460 $\pm$ 0.0090 & 0.2171 $\pm$ 0.0149 & 0.9953 $\pm$ 0.0038 & 0.9913 $\pm$ 0.0030 & 0.0404 $\pm$ 0.0003 & 0.0195 $\pm$ 0.0002 \\
+intrusion & VAE & Time (s) & 1000.57 $\pm$ 132.30 & 311.83 $\pm$ 11.69 & 864.81 $\pm$ 111.77 & 25275.99 $\pm$ 899.58 & 136.01 $\pm$ 5.52 & 1.73 $\pm$ 0.17 & 0.04 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+intrusion & CTGAN & $\widehat{D}_{\mathrm{JS}}$ & 0.5733 $\pm$ 0.0154 & 0.8395 $\pm$ 0.0106 & 0.0685 $\pm$ 0.0107 & 0.2874 $\pm$ 0.0097 & 0.9037 $\pm$ 0.0081 & 0.8337 $\pm$ 0.0084 & 0.0211 $\pm$ 0.0003 & 0.0084 $\pm$ 0.0003 \\
+intrusion & CTGAN & Time (s) & 1382.65 $\pm$ 165.90 & 296.91 $\pm$ 19.55 & 734.26 $\pm$ 35.02 & 28076.65 $\pm$ 420.86 & 164.56 $\pm$ 6.98 & 1.76 $\pm$ 0.37 & 0.04 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 4. Results by dataset for VAE. Rows report DJS and runtime as mean $\pm$ std over 5 seeds for each dataset, with columns for all discriminators and baselines, excluding GT.}
+\label{tab:uc4_vae_by_classifier_mean_std}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Metric & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & VAE DJS & 0.1904 $\pm$ 0.0099 & 0.2123 $\pm$ 0.0057 & 0.0328 $\pm$ 0.0031 & 0.6929 $\pm$ 0.0246 & 0.0542 $\pm$ 0.0041 & 0.4143 $\pm$ 0.0081 & 0.0088 $\pm$ 0.0002 & 0.0084 $\pm$ 0.0002 \\
+adult & Time VAE (s) & 1328.50 $\pm$ -- & 425.61 $\pm$ -- & 54.80 $\pm$ -- & 158.24 $\pm$ -- & 3733.98 $\pm$ -- & 1.55 $\pm$ -- & 0.01 $\pm$ -- & 0.01 $\pm$ -- \\
+intrusion & VAE DJS & 0.9103 $\pm$ 0.0064 & 0.9877 $\pm$ 0.0057 & 0.0460 $\pm$ 0.0081 & 0.9953 $\pm$ 0.0034 & 0.2171 $\pm$ 0.0134 & 0.9913 $\pm$ 0.0027 & 0.0404 $\pm$ 0.0003 & 0.0195 $\pm$ 0.0002 \\
+intrusion & Time VAE (s) & 1000.57 $\pm$ -- & 311.83 $\pm$ -- & 864.81 $\pm$ -- & 136.01 $\pm$ -- & 25275.99 $\pm$ -- & 1.73 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+king & VAE DJS & 0.8490 $\pm$ 0.0056 & 0.5548 $\pm$ 0.0168 & 0.1256 $\pm$ 0.0122 & 0.8901 $\pm$ 0.0073 & 0.4886 $\pm$ 0.0162 & 0.9053 $\pm$ 0.0094 & 0.0313 $\pm$ 0.0002 & 0.0296 $\pm$ 0.0002 \\
+king & Time VAE (s) & 1114.88 $\pm$ -- & 695.82 $\pm$ -- & 76.64 $\pm$ -- & 240.40 $\pm$ -- & 9071.47 $\pm$ -- & 1.70 $\pm$ -- & 0.02 $\pm$ -- & 0.02 $\pm$ -- \\
+news & VAE DJS & 0.3996 $\pm$ 0.0091 & 0.8822 $\pm$ 0.0129 & 0.0108 $\pm$ 0.0028 & 0.9970 $\pm$ 0.0022 & 0.2649 $\pm$ 0.0118 & 0.9974 $\pm$ 0.0008 & 0.0713 $\pm$ 0.0003 & 0.0669 $\pm$ 0.0002 \\
+news & Time VAE (s) & 962.58 $\pm$ -- & 604.95 $\pm$ -- & 456.21 $\pm$ -- & 151.82 $\pm$ -- & 23768.48 $\pm$ -- & 1.88 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+\bottomrule
+\end{tabular}
+\end{table}

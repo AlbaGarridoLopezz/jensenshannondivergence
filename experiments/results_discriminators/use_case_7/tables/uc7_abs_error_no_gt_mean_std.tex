@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 7. Absolute Jensen--Shannon estimation error across dimensionalities, reported as mean $\pm$ std over 5 seeds. The last row reports mean runtime over the displayed dimensions.}
+\label{tab:uc7_abs_error_no_gt_mean_std}
+\begin{tabular}{rcccccccc}
+\toprule
+N & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+2 & 0.0011 $\pm$ 0.0580 & 0.1893 $\pm$ 0.0573 & 0.2078 $\pm$ 0.0574 & 0.1957 $\pm$ 0.0571 & 0.2078 $\pm$ 0.0577 & 0.2093 $\pm$ 0.0574 & 0.0249 $\pm$ 0.0484 & 0.0302 $\pm$ 0.0476 \\
+10 & 0.0007 $\pm$ 0.0718 & 0.2207 $\pm$ 0.0708 & 0.2154 $\pm$ 0.0735 & 0.2209 $\pm$ 0.0704 & 0.2160 $\pm$ 0.0734 & 0.2142 $\pm$ 0.0735 & 0.2396 $\pm$ 0.0439 & 0.2448 $\pm$ 0.0438 \\
+25 & 0.0316 $\pm$ 0.0753 & 0.0973 $\pm$ 0.0676 & 0.0377 $\pm$ 0.0741 & 0.0625 $\pm$ 0.0713 & 0.0370 $\pm$ 0.0734 & 0.0337 $\pm$ 0.0751 & 0.3946 $\pm$ 0.0541 & 0.3999 $\pm$ 0.0541 \\
+40 & 0.0719 $\pm$ 0.0632 & 0.1828 $\pm$ 0.0578 & 0.0794 $\pm$ 0.0660 & 0.1019 $\pm$ 0.0654 & 0.0794 $\pm$ 0.0660 & 0.0764 $\pm$ 0.0653 & 0.5302 $\pm$ 0.0410 & 0.5354 $\pm$ 0.0407 \\
+50 & 0.0762 $\pm$ 0.0705 & 0.2361 $\pm$ 0.0602 & 0.0884 $\pm$ 0.0758 & 0.1197 $\pm$ 0.0706 & 0.0885 $\pm$ 0.0758 & 0.0862 $\pm$ 0.0755 & 0.6003 $\pm$ 0.0434 & 0.6056 $\pm$ 0.0432 \\
+Time (avg s) & 67.06 $\pm$ -- & 385.58 $\pm$ -- & 1.03 $\pm$ -- & 194.68 $\pm$ -- & 626.64 $\pm$ -- & 0.73 $\pm$ -- & 0.05 $\pm$ -- & 0.04 $\pm$ -- \\
+\bottomrule
+\end{tabular}
+\end{table}

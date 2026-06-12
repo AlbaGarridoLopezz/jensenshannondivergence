@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.10, 3.11]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install build tools and deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install build
+          pip install -e '.[dev]'
+      - name: Lint with ruff
+        run: |
+          python -m ruff check . || true
+      - name: Run tests
+        run: |
+          pytest -q
+      - name: Build distributions
+        run: |
+          python -m build

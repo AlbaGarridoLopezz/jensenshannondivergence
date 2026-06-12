@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 4. Results by dataset for CTGAN. Rows report DJS and runtime as mean $\pm$ std over 5 seeds for each dataset, with columns for all discriminators and baselines, excluding GT.}
+\label{tab:uc4_ctgan_by_classifier_mean_std}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Metric & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+adult & CTGAN DJS & 0.1245 $\pm$ 0.0079 & 0.1679 $\pm$ 0.0175 & 0.0225 $\pm$ 0.0079 & 0.6658 $\pm$ 0.0064 & 0.0419 $\pm$ 0.0109 & 0.3769 $\pm$ 0.0137 & 0.0145 $\pm$ 0.0001 & 0.0140 $\pm$ 0.0001 \\
+adult & Time CTGAN (s) & 1150.93 $\pm$ -- & 402.26 $\pm$ -- & 50.42 $\pm$ -- & 151.99 $\pm$ -- & 3423.97 $\pm$ -- & 1.45 $\pm$ -- & 0.01 $\pm$ -- & 0.01 $\pm$ -- \\
+intrusion & CTGAN DJS & 0.5733 $\pm$ 0.0138 & 0.8395 $\pm$ 0.0095 & 0.0685 $\pm$ 0.0096 & 0.9037 $\pm$ 0.0072 & 0.2874 $\pm$ 0.0087 & 0.8337 $\pm$ 0.0075 & 0.0211 $\pm$ 0.0003 & 0.0084 $\pm$ 0.0002 \\
+intrusion & Time CTGAN (s) & 1382.65 $\pm$ -- & 296.91 $\pm$ -- & 734.26 $\pm$ -- & 164.56 $\pm$ -- & 28076.65 $\pm$ -- & 1.76 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+king & CTGAN DJS & 0.7439 $\pm$ 0.0111 & 0.3480 $\pm$ 0.0217 & 0.0631 $\pm$ 0.0114 & 0.9225 $\pm$ 0.0076 & 0.2182 $\pm$ 0.0113 & 0.9293 $\pm$ 0.0042 & 0.0207 $\pm$ 0.0001 & 0.0196 $\pm$ 0.0001 \\
+king & Time CTGAN (s) & 1220.77 $\pm$ -- & 669.82 $\pm$ -- & 74.86 $\pm$ -- & 278.11 $\pm$ -- & 7292.66 $\pm$ -- & 1.73 $\pm$ -- & 0.03 $\pm$ -- & 0.02 $\pm$ -- \\
+news & CTGAN DJS & 0.4841 $\pm$ 0.0153 & 0.8053 $\pm$ 0.0098 & 0.1022 $\pm$ 0.0076 & 0.9963 $\pm$ 0.0024 & 0.3477 $\pm$ 0.0141 & 0.9472 $\pm$ 0.0004 & 0.0412 $\pm$ 0.0003 & 0.0381 $\pm$ 0.0002 \\
+news & Time CTGAN (s) & 786.59 $\pm$ -- & 600.41 $\pm$ -- & 213.39 $\pm$ -- & 158.30 $\pm$ -- & 26210.05 $\pm$ -- & 1.84 $\pm$ -- & 0.04 $\pm$ -- & 0.03 $\pm$ -- \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Use case 4. CTGAN results by dataset. $\DJS$ is reported as mean $\pm$ std over 5 seeds. Runtime is reported in seconds and includes the full training pipeline, including hyperparameter search when enabled.}}
+\label{tab:uc4_ctgan}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Dataset & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+\multicolumn{9}{c}{\textbf{$\DJS$}} \\
+\midrule
+adult & 0.1245 $\pm$ 0.0079 & 0.1679 $\pm$ 0.0175 & 0.0225 $\pm$ 0.0079 & 0.6658 $\pm$ 0.0064 & 0.0419 $\pm$ 0.0109 & 0.3769 $\pm$ 0.0137 & 0.0145 $\pm$ 0.0001 & 0.0140 $\pm$ 0.0001 \\
+intrusion & 0.5733 $\pm$ 0.0138 & 0.8395 $\pm$ 0.0095 & 0.0685 $\pm$ 0.0096 & 0.9037 $\pm$ 0.0072 & 0.2874 $\pm$ 0.0087 & 0.8337 $\pm$ 0.0075 & 0.0211 $\pm$ 0.0003 & 0.0084 $\pm$ 0.0002 \\
+king & 0.7439 $\pm$ 0.0111 & 0.3480 $\pm$ 0.0217 & 0.0631 $\pm$ 0.0114 & 0.9225 $\pm$ 0.0076 & 0.2182 $\pm$ 0.0113 & 0.9293 $\pm$ 0.0042 & 0.0207 $\pm$ 0.0001 & 0.0196 $\pm$ 0.0001 \\
+news & 0.4841 $\pm$ 0.0153 & 0.8053 $\pm$ 0.0098 & 0.1022 $\pm$ 0.0076 & 0.9963 $\pm$ 0.0024 & 0.3477 $\pm$ 0.0141 & 0.9472 $\pm$ 0.0004 & 0.0412 $\pm$ 0.0003 & 0.0381 $\pm$ 0.0002 \\
+\midrule
+\multicolumn{9}{c}{\textbf{Time (s)}} \\
+\midrule
+adult & 1150.93 & 402.26 & 50.42 & 151.99 & 3423.97 & 1.45 & 0.01 & 0.01 \\
+intrusion & 1382.65 & 296.91 & 734.26 & 164.56 & 28076.65 & 1.76 & 0.04 & 0.03 \\
+king & 1220.77 & 669.82 & 74.86 & 278.11 & 7292.66 & 1.73 & 0.03 & 0.02 \\
+news & 786.59 & 600.41 & 213.39 & 158.30 & 26210.05 & 1.84 & 0.04 & 0.03 \\
+\bottomrule
+\end{tabular}}
+\end{table}

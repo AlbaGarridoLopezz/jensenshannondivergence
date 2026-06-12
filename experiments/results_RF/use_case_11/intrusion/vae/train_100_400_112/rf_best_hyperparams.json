@@ -1,0 +1,9 @@
+{
+  "class_weight": "balanced_subsample",
+  "max_depth": 9,
+  "max_features": "sqrt",
+  "max_samples": 0.9591129928693576,
+  "min_samples_leaf": 10,
+  "min_samples_split": 11,
+  "n_estimators": 448
+}

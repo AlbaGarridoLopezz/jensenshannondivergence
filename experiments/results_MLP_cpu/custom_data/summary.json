@@ -1,0 +1,14 @@
+{
+  "mode": "custom",
+  "experiment": "custom_data",
+  "discriminator_type": "MLP",
+  "seed": 0,
+  "n": null,
+  "m": 400,
+  "l": 200,
+  "mc_gt_js": null,
+  "mc_js": null,
+  "disc_js": 0.0,
+  "training_time_s": 1.9667847156524658,
+  "output_dir": "/home/alba/snap/snapd-desktop-integration/jensenshannondivergence/experiments/results_MLP/custom_data"
+}

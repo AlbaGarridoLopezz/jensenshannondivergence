@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\caption{Use case 4 for adult and intrusion with VAE and CTGAN. Rows report mean $\pm$ standard deviation over seeds for $\widehat{D}_{\mathrm{JS}}$ and runtime.}
+\label{tab:uc4_adult_intrusion_vae_ctgan_mean_std_split}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Generator & Dataset & MLP & RF & LogReg & XGBoost & LogRegPol & TabPFN & Syndat & Synthcity \\
+\midrule
+\multicolumn{10}{c}{\textbf{$\widehat{D}_{\mathrm{JS}}$}} \\
+\midrule
+VAE & adult & 0.19 $\pm$ 0.01 & 0.21 $\pm$ 0.01 & 0.03 $\pm$ 0.00 & 0.69 $\pm$ 0.03 & 0.05 $\pm$ 0.00 & 0.41 $\pm$ 0.01 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+VAE & intrusion & 0.92 $\pm$ 0.01 & 0.99 $\pm$ 0.01 & 0.05 $\pm$ 0.01 & 1.00 $\pm$ 0.00 & 0.22 $\pm$ 0.01 & 0.99 $\pm$ 0.00 & 0.04 $\pm$ 0.00 & 0.02 $\pm$ 0.00 \\
+CTGAN & adult & 0.12 $\pm$ 0.01 & 0.17 $\pm$ 0.02 & 0.02 $\pm$ 0.01 & 0.67 $\pm$ 0.01 & 0.04 $\pm$ 0.01 & 0.38 $\pm$ 0.02 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+CTGAN & intrusion & 0.56 $\pm$ 0.03 & 0.84 $\pm$ 0.01 & 0.07 $\pm$ 0.01 & 0.90 $\pm$ 0.01 & 0.29 $\pm$ 0.01 & 0.83 $\pm$ 0.01 & 0.02 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+\midrule
+\multicolumn{10}{c}{\textbf{Time (s)}} \\
+\midrule
+VAE & adult & 932.60 $\pm$ 384.28 & 425.61 $\pm$ 30.67 & 54.80 $\pm$ 3.56 & 158.24 $\pm$ 12.15 & 3733.98 $\pm$ 145.06 & 1.55 $\pm$ 0.38 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+VAE & intrusion & 1122.72 $\pm$ 97.16 & 311.83 $\pm$ 11.69 & 864.81 $\pm$ 111.77 & 136.01 $\pm$ 5.52 & 25275.99 $\pm$ 899.58 & 1.73 $\pm$ 0.17 & 0.04 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+CTGAN & adult & 955.84 $\pm$ 210.48 & 402.26 $\pm$ 17.76 & 50.42 $\pm$ 0.91 & 151.99 $\pm$ 14.44 & 3423.97 $\pm$ 180.47 & 1.45 $\pm$ 0.16 & 0.01 $\pm$ 0.00 & 0.01 $\pm$ 0.00 \\
+CTGAN & intrusion & 1163.12 $\pm$ 200.03 & 296.91 $\pm$ 19.55 & 734.26 $\pm$ 35.02 & 164.56 $\pm$ 6.98 & 28076.65 $\pm$ 420.86 & 1.76 $\pm$ 0.37 & 0.04 $\pm$ 0.00 & 0.03 $\pm$ 0.00 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,0 +1,8 @@
+{
+  "mode": "custom",
+  "dataset": "x_synthetic_2",
+  "m": 400,
+  "l": 200,
+  "disc_js": 0.6899726390838623,
+  "mc_gt_js": null
+}
